@@ -1,0 +1,141 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+    width: 80rem;
+}
+body {
+    min-width: 50rem;
+    min-height: 40rem;
+    background-color: lightslategrey;
+}
+
+.player1 {
+    border-right: solid 5px #f5f2e9;
+    width: 25rem;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+.player2 {
+    border-left: solid 5px #f5f2e9;
+    width: 25rem;
+    margin-right: 2rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+.main-div {
+    display: flex;
+    flex-direction: row;
+}
+.main-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    height: 31rem;
+    width: 31rem;
+}
+#row-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.square {
+    text-align: center;
+    height: 10rem;
+    width: 10rem;
+    background-color: #f5f2e9;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+.buttons-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .calculator-button {
+    text-align: center;
+    height: 2rem;
+    width: 22%;
+    background-color: #f5f2e9;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  } */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #990f02;
+    display: flex;
+    flex-direction: row;
+}
+.name-sec {
+    display: inline-block;
+    color: #ffff;
+    margin: 2%;
+    font-size: 100px;
+    height: 1000px;
+}
+.game_sec {
+    margin: 5% 2%;
+    max-width: 600px;
+}
+.game_sec div {
+    /* column-count: 3; */
+    display: inline-block;
+    color: #ffff;
+    background-color: #ffff;
+    height: 160px;
+    width: 160px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+.game_sec div:hover{
+    top: 5px;
+}
+.score_sec {
+    margin: 5% 0%;
+    color: #ffff;
+}
+.score_sec h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.score_sec h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+.score_sec p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: bold;
+}
+.score_sec div{
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 260px;
+    border: 1px solid rgb(199, 112, 112);
+    border-radius: 10px;
+}
