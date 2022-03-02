@@ -17,7 +17,6 @@ replay.onclick = function replayGame() {
     displayElements();
 }
 function displayElements() {
-    console.log("dont display a thing");
     document.getElementById("winnerX").style.display = "none";
     document.getElementById("winnerO").style.display = "none";
     for (let j = 0; j < 9; j++) {
@@ -31,19 +30,19 @@ function displayElements() {
 }
 function setSquare(event, squareNumber) {
     changeImg(squareNumber);
-    console.log('mew');    
 }
 function changeImg(i) {
     if (squares[i] == 0 && winner == false) {
         if (XO == 'x') {
-            document.getElementById("square" + i).getElementsByTagName('img')[0].src = "../img/icon-x.png";
+            console.log("fjjfjffjjfjfjf");
+            document.getElementById("square" + i).getElementsByTagName('img')[0].src = "./img/icon-x.png";
             squares[i] = 1;     // 1 is x
             XO = 'o';
             document.getElementsByClassName("piece")[0].getElementsByTagName('img')[numberOfX - 1].style.display = "none";
             numberOfX--;
         }
         else {
-            document.getElementById("square" + i).getElementsByTagName('img')[0].src = "../img/icon-o.png";
+            document.getElementById("square" + i).getElementsByTagName('img')[0].src = "./img/icon-o.png";
             squares[i] = 2;     // 2 is o
             XO = 'x';
             document.getElementsByClassName("piece")[1].getElementsByTagName('img')[numberOfO - 1].style.display = "none";
@@ -56,7 +55,6 @@ function changeImg(i) {
 function checkBoard() {
     for (let i = 0; i < 7; i += 3) {
         if (squares[i] == squares[i + 1] && squares[i] == squares[i + 2] && squares[i] != 0) {
-            console.log("check");
             chooseWinner(i);
             break;
         }
@@ -64,7 +62,6 @@ function checkBoard() {
     for (let i = 0; i < 3; i++) {
         if (squares[i] == squares[i + 3] && squares[i + 3] == squares[i + 6] && squares[i] != 0) {
             chooseWinner(i);
-            console.log("in her");
             break;
         }
     }
@@ -78,14 +75,12 @@ function checkBoard() {
 
 function chooseWinner(i) {
     if (squares[i] == 1) {
-        console.log("winner is declared");
         document.getElementById("winnerX").style.display = "block";
         playerXScore++;
         document.getElementById("scoresX").innerHTML = playerXScore;
         winner = true;
     }
     else {
-        console.log("winner is declared");
         document.getElementById("winnerO").style.display = "block";
         playerOScore++;
         document.getElementById("scoresO").innerHTML = playerOScore;
