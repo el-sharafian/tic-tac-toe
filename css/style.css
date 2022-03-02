@@ -9,8 +9,8 @@ body {
   display: flex;
   flex-direction: row;
 }
+/* name section styles */
 .name-sec {
-  /* position: static; */
   font-family:cursive;
   display: inline-block;
   color: #ffff;
@@ -18,11 +18,8 @@ body {
   font-size: 85px;
 }
 button {
-  /* margin-left: 50px; */
-  /* margin-right: auto; */
   right: auto;
   width: 100%;
-  /* display: ; */
   left: auto;
   position: relative;
   background-color: #990f02;
@@ -35,22 +32,50 @@ button:hover {
   top: 5px;
   cursor: pointer;
 }
+/* game section styles */
 .game_sec {
   margin: 5% 2%;
   max-width: 40vw;
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 70%;
 }
 .game_sec div {
-  display: inline-block;
+  display: inline-flex;
   background-color: #ffff;
   height: 10vw;
   width: 10vw;
   margin-bottom: 20px;
   margin-right: 20px;
 }
+.game_sec img {
+  position: relative;
+  left: 0.5vw;
+  top: 0.5vw;
+  height: 9vw;
+  width: 9vw;
+  border: none;
+  display: none;
+}
 .game_sec div:hover {
   position: relative;
-  border: 5px solid #990f02;
-  box-sizing: border-box;
+  top: 5px;
+}
+.game_sec h1 {
+  font-size: 50px;
+  color: #ffff;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+}
+#winnerO{
+  display: none;
+}
+#winnerX{
+  display: none;
 }
 /* score section styles */
 .score_sec {
@@ -70,10 +95,6 @@ button:hover {
   padding: 10px 15px;
   color: #ffff;
 }
-/* .information { */
-/* width: 50%; */
-/* padding: 10px; */
-/* } */
 .information h2 {
   font-size: 50px;
   text-align: center;
@@ -93,7 +114,6 @@ button:hover {
 }
 .piece {
   margin-left: auto;
-  /* margin-right: 20px; */
   margin-top: auto;
   margin-bottom: auto;
   width: 40%;
@@ -101,22 +121,19 @@ button:hover {
 .piece div {
   display: inline-block;
   box-sizing: border-box;
-  /* margin: 15px; */
-  /* height: 20px; */
-  /* width: 20px; */
-  /* background-color: #ffff; */
 }
 .piece div:hover {
     cursor: pointer;
-  top: 5px;
-  position: relative;
 }
 .piece img {
   height: 50px;
   width: 50px;
+  display: inline-flex;
+}
+#img_cross{
+  height: 2px;
+  width: 2px;
 }
 .piece img:hover {
-  background-image: url("../img/black-cross.png");
-  height: 50px;
-  width: 50px;
+  filter: invert(1);
 }
