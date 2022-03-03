@@ -3,7 +3,7 @@
   margin: 0;
 }
 body {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #990f02;
   overflow: hidden;
   display: flex;
@@ -11,11 +11,14 @@ body {
 }
 /* name section styles */
 .name-sec {
-  font-family:cursive;
+  font-family: cursive;
   display: inline-block;
   color: #ffff;
   margin: 2% 2%;
   font-size: 85px;
+}
+.h1Responsive900 {
+  display: none;
 }
 button {
   right: auto;
@@ -71,10 +74,10 @@ button:hover {
   margin-left: auto;
   margin-top: 2%;
 }
-#winnerO{
+#winnerO {
   display: none;
 }
-#winnerX{
+#winnerX {
   display: none;
 }
 /* score section styles */
@@ -123,17 +126,93 @@ button:hover {
   box-sizing: border-box;
 }
 .piece div:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .piece img {
   height: 50px;
   width: 50px;
   display: inline-flex;
 }
-#img_cross{
+#img_cross {
   height: 2px;
   width: 2px;
 }
 .piece img:hover {
   filter: invert(1);
+}
+/* responsive */
+@media screen and (max-width: 1200px) {
+  .name-sec {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .name-sec {
+    font-size: 60px;
+  }
+  .score_sec {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .name-sec {
+    font-size: 50px;
+  }
+  .score_sec {
+    width: 20vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .name-sec {
+    font-size: 30px;
+    display: inline-flex;
+  }
+  .h1Responsive900 {
+    display: inline;
+  }
+  .h1Responsive1200{
+    display: none;
+  }
+  body {
+    overflow:auto;
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    width: 50px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button img{
+    width: 50px;
+    height: 50px;
+  }
+  .score_sec {
+    width: 60vw;
+  }
+  .game_sec {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80vw;
+  }
+  .game_sec div {
+    height: 20vw;
+    width: 20vw;
+  }
+  .game_sec img {
+    height: 20vw;
+    width: 20vw;
+    display: none;
+  }
+  .information h2 {
+    font-size: 30px;
+  }
+  .information h3 {
+    font-size: 20px;
+  }
+  .information p {
+    text-align: center;
+    font-size: 50px;
+  }
 }

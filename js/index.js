@@ -34,7 +34,6 @@ function setSquare(event, squareNumber) {
 function changeImg(i) {
     if (squares[i] == 0 && winner == false) {
         if (XO == 'x') {
-            console.log("fjjfjffjjfjfjf");
             document.getElementById("square" + i).getElementsByTagName('img')[0].src = "./img/icon-x.png";
             squares[i] = 1;     // 1 is x
             XO = 'o';
