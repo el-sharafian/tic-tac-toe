@@ -5,46 +5,56 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #990f02;
-  overflow: hidden;
+  height: 100vh;
+}
+.main_sec {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* name section styles */
-.name-sec {
+.name_sec {
   font-family: cursive;
   display: inline-block;
   color: #ffff;
-  margin: 2% 2%;
-  font-size: 85px;
-}
-.h1Responsive900 {
-  display: none;
+  margin: 0% 2%;
+  font-size: 5vw;
+  height: 35vw;
+  width: 15vw;
+  text-align: center;
+  justify-content: center;
 }
 button {
-  right: auto;
-  width: 100%;
-  left: auto;
-  position: relative;
+  display: inline;
   background-color: #990f02;
-  padding: 10px;
-  box-sizing: border-box;
   border: none;
+}
+button img {
+  width: 4vw;
+  height: 4vw;
 }
 button:hover {
   position: relative;
   top: 5px;
   cursor: pointer;
 }
+#winner{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 500;
+}
 /* game section styles */
 .game_sec {
-  margin: 5% 2%;
-  max-width: 40vw;
+  width: 42vw;
   position: relative;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  height: 70%;
+  height: 35vw;
 }
 .game_sec div {
   display: inline-flex;
@@ -68,38 +78,34 @@ button:hover {
   top: 5px;
 }
 .game_sec h1 {
-  font-size: 50px;
+  font-size: 3.5vw;
   color: #ffff;
   margin-right: auto;
   margin-left: auto;
   margin-top: 2%;
 }
-#winnerO {
-  display: none;
-}
-#winnerX {
+#winner {
   display: none;
 }
 /* score section styles */
 .score_sec {
   width: 30%;
-  height: 100%;
-  max-height: 700px;
-  margin-top: 5%;
+  height: 35vw;
 }
 .player {
   width: 100%;
-  height: 100%;
+  height: 16vw;
   border: 2px solid #ffff;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 10%;
+  box-sizing: border-box;
+  margin-bottom: 4%;
   padding: 10px 15px;
   color: #ffff;
 }
 .information h2 {
-  font-size: 50px;
+  font-size: 3.5vw;
   text-align: center;
   font-weight: 400;
 }
@@ -107,12 +113,12 @@ button:hover {
   margin-top: 10px;
   font-weight: 700;
   letter-spacing: 5px;
-  font-size: 30px;
+  font-size: 2.5vw;
   text-align: center;
 }
 .information p {
   text-align: center;
-  font-size: 70px;
+  font-size: 6vw;
   font-weight: 800;
 }
 .piece {
@@ -125,94 +131,12 @@ button:hover {
   display: inline-block;
   box-sizing: border-box;
 }
-.piece div:hover {
-  cursor: pointer;
-}
 .piece img {
-  height: 50px;
-  width: 50px;
+  height: 3vw;
+  width: 3vw;
   display: inline-flex;
 }
 #img_cross {
   height: 2px;
   width: 2px;
-}
-.piece img:hover {
-  filter: invert(1);
-}
-/* responsive */
-@media screen and (max-width: 1200px) {
-  .name-sec {
-    font-size: 70px;
-  }
-}
-@media screen and (max-width: 1050px) {
-  .name-sec {
-    font-size: 60px;
-  }
-  .score_sec {
-    width: 30vw;
-  }
-}
-@media screen and (max-width: 900px) {
-  .name-sec {
-    font-size: 50px;
-  }
-  .score_sec {
-    width: 20vw;
-  }
-}
-@media screen and (max-width: 800px) {
-  .name-sec {
-    font-size: 30px;
-    display: inline-flex;
-  }
-  .h1Responsive900 {
-    display: inline;
-  }
-  .h1Responsive1200{
-    display: none;
-  }
-  body {
-    overflow:auto;
-    display: flex;
-    flex-direction: column;
-  }
-  button {
-    width: 50px;
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  button img{
-    width: 50px;
-    height: 50px;
-  }
-  .score_sec {
-    width: 60vw;
-  }
-  .game_sec {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80vw;
-  }
-  .game_sec div {
-    height: 20vw;
-    width: 20vw;
-  }
-  .game_sec img {
-    height: 20vw;
-    width: 20vw;
-    display: none;
-  }
-  .information h2 {
-    font-size: 30px;
-  }
-  .information h3 {
-    font-size: 20px;
-  }
-  .information p {
-    text-align: center;
-    font-size: 50px;
-  }
 }

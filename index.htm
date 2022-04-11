@@ -4,58 +4,64 @@
 <head>
     <title>tic tac toe</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="img/tic-tac-toe.png"/>
+    <link rel="shortcut icon" href="img/tic-tac-toe.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <section class="name-sec">
-        <h1 class="h1Responsive1200">Tic<br>Tac<br>Toe</h1>
-        <h1 class="h1Responsive900">Tic Tac Toe</h1>
-        <button type="button" id="replay"><img src="img/replay-96.png"></button>
+    <section class="main_sec">
+        <section class="name_sec">
+            <h1 class="name">Tic<br>Tac<br>Toe</h1>
+            <div><button type="button" id="replay"><img src="img/replay-96.png" title="replay"></button>
+                <button type="button" id="restart"><img src="img/restart.png" title="restart"></button>
+            </div>
+            <h2 id="winner"></h2>
+        </section>
+        <section class="game_sec">
+            <div><img alt=" "></div>
+            <div><img alt=" "></div>
+            <div><img alt=" "></div>
+            <div><img alt=" "></div>
+            <div><img alt=" "></div>
+            <div><img alt=" "></div>
+            <div><img alt=" "></div>
+            <div><img alt=" "></div>
+            <div><img alt=" "></div>
+        </section>
+        <section class="score_sec">
+            <div class="player">
+                <div class="information">
+                    <h2>player X</h2>
+                    <h3>score</h3>
+                    <p id="scoresX">0</p>
+                </div>
+                <div class="piece">
+                    <div><img src="img/white-cross.png"></div>
+                    <div><img src="img/white-cross.png"></div>
+                    <div><img src="img/white-cross.png"></div>
+                    <div><img src="img/white-cross.png"></div>
+                    <div><img src="img/white-cross.png"></div>
+                </div>
+            </div>
+            <div class="player">
+                <div class="information">
+                    <h2>player O</h2>
+                    <h3>score</h3>
+                    <p id="scoresO">0</p>
+                </div>
+                <div class="piece">
+                    <div><img src="img/white-circle.png"></div>
+                    <div><img src="img/white-circle.png"></div>
+                    <div><img src="img/white-circle.png"></div>
+                    <div><img src="img/white-circle.png"></div>
+                </div>
+            </div>
+        </section>
     </section>
-    <section class="game_sec">
-        <div id="square0"><img src="img/circle.png" alt=" "></div>
-        <div id="square1"><img alt=" "></div>
-        <div id="square2"><img alt=" "></div>
-        <div id="square3"><img alt=" "></div>
-        <div id="square4"><img alt=" "></div> 
-        <div id="square5"><img alt=" "></div>
-        <div id="square6"><img alt=" "></div>
-        <div id="square7"><img alt=" "></div>
-        <div id="square8"><img alt=" "></div>
-        <h1 id="winnerO">winner is O</h1>
-        <h1 id="winnerX">winner is X</h1>
-    </section>
-    <section class="score_sec">
-        <div class="player">
-            <div class="information">
-                <h2>player 1</h2>
-                <h3>score</h3>
-                <p id="scoresX">0</p>
-            </div>
-            <div class="piece">
-                <div><img src="img/white-cross.png"></div>
-                <div><img src="img/white-cross.png"></div>
-                <div><img src="img/white-cross.png"></div>
-                <div><img src="img/white-cross.png"></div>
-                <div><img src="img/white-cross.png"></div> 
-            </div>
-        </div>
-        <div class="player">
-            <div class="information">
-                <h2>player 2</h2>
-                <h3>score</h3>
-                <p id="scoresO">0</p>
-            </div>
-            <div class="piece">
-                <div><img src="img/white-circle.png"></div>
-                <div><img src="img/white-circle.png"></div>
-                <div><img src="img/white-circle.png"></div>
-                <div><img src="img/white-circle.png"></div>
-                <div><img src="img/white-circle.png"></div>
-            </div>
-        </div>
-    </section>
+
+    <footer>
+
+    </footer>
     <script src="js/index.js"></script>
 </body>
 
